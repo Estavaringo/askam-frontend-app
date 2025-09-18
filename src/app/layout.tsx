@@ -1,5 +1,8 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,11 +26,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="pt-BR">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="dojo-header">
+          <span className="dojo-logo" style={{display: 'flex', alignItems: 'center', gap: 12}}>
+            <Image src="/logo.png" alt="Logo Dojo Karate" width={48} height={48} style={{borderRadius: 8, background: '#fff'}} />
+            Dojo Karate
+          </span>
+          <nav className="dojo-nav">
+            <Link href="/">Início</Link>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <Link href="/admin">Área do Sensei</Link>
+          </nav>
+        </header>
+        <main style={{ maxWidth: 900, margin: '2rem auto', padding: '0 1rem' }}>{children}</main>
       </body>
     </html>
   );
