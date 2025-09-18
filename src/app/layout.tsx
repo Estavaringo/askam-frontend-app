@@ -35,9 +35,7 @@ export default function RootLayout({
           </span>
           <nav className="dojo-nav">
             <Link href="/">Início</Link>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-            <Link href="/admin">Área do Sensei</Link>
+            <Link href="/admin">Administração</Link>
           </nav>
         </header>
         <main style={{ maxWidth: 900, margin: '2rem auto', padding: '0 1rem' }}>{children}</main>
