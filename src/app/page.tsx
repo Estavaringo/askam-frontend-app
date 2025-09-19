@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div>
       <section style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
-        <h1 className="dojo-title">Bem-vindo ao Dojo Karate</h1>
+        <h1 className="dojo-title">Bem-vindo à Askam</h1>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap', margin: '1.5rem 0' }}>
-          <Image src="/logo.png" alt="Logo Dojo Karate" width={100} height={100} style={{ borderRadius: 12, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/logo.png" alt="Logo Askam" width={100} height={100} style={{ borderRadius: 12, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
           <Image src="/federacao_karate.png" alt="Federação de Karatê" width={100} height={100} style={{ borderRadius: 12, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
         </div>
         <p style={{ fontSize: '1.2rem', maxWidth: 700, margin: '0 auto' }}>
@@ -16,8 +16,8 @@ export default function Home() {
 
       <section id="sobre" style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ color: 'var(--primary)' }}>Sobre o Dojo</h2>
-        <p>
-          Fundado pelo Sensei, nosso dojo conta com turmas para todas as idades e níveis. Os treinos são realizados em ambiente acolhedor, com foco no desenvolvimento técnico e valores do karatê.
+        <p style={{ fontSize: '1.1rem', lineHeight: 1.7 }}>
+          A ASKAM (Associação de Karatê Manoel) foi fundada em 2002 pelo Sensei Manoel Laurentino, faixa preta 4º DAN, árbitro nacional e internacional. Com uma trajetória dedicada ao karatê desde 1979, o Sensei Manoel criou a ASKAM com o objetivo de promover a disciplina, educação e formação de atletas, especialmente entre crianças e jovens carentes. Nosso dojo valoriza o respeito, o equilíbrio emocional e o desenvolvimento técnico, formando não apenas atletas, mas cidadãos exemplares. Venha fazer parte dessa história!
         </p>
       </section>
 
