@@ -35,6 +35,7 @@ export default function RootLayout({
           </span>
           <nav className="dojo-nav">
             <Link href="/">Início</Link>
+            <Link href="/historia">História</Link>
             <Link href="/admin">Administração</Link>
           </nav>
         </header>
