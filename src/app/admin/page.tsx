@@ -22,14 +22,14 @@ export default function AdminLogin() {
       maxWidth: 340,
       margin: "4rem auto",
       padding: 28,
-      background: "#181818",
+      background: "var(--background)",
       borderRadius: 12,
       boxShadow: "0 4px 24px #0005"
     }}>
-      <h2 style={{ color: "#fff", marginBottom: 28, textAlign: 'center', letterSpacing: 1, fontWeight: 700, fontSize: 28 }}>Administração</h2>
+      <h2 style={{ color: "var(--foreground)", marginBottom: 28, textAlign: 'center', letterSpacing: 1, fontWeight: 700, fontSize: 28 }}>Administração</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: 18 }}>
-          <label htmlFor="password" style={{ color: "#fff", fontWeight: 600, fontSize: 16 }}>Senha:</label>
+          <label htmlFor="password" style={{ color: "var(--foreground)", fontWeight: 600, fontSize: 16 }}>Senha:</label>
           <input
             id="password"
             type="password"
@@ -40,17 +40,17 @@ export default function AdminLogin() {
               width: "100%",
               padding: 12,
               borderRadius: 6,
-              border: "1.5px solid #444",
+              border: "1.5px solid var(--accent)",
               marginTop: 8,
-              background: "#232323",
-              color: "#fff",
+              background: "var(--surface)",
+              color: "var(--foreground)",
               fontSize: 17,
               outline: 'none',
               fontWeight: 500
             }}
           />
         </div>
-        {error && <div style={{ color: "#ffd600", marginBottom: 14, fontWeight: 700, textAlign: 'center' }}>{error}</div>}
+        {error && <div style={{ color: "var(--accent)", marginBottom: 14, fontWeight: 700, textAlign: 'center' }}>{error}</div>}
         <button type="submit" style={{
           background: "var(--primary)",
           color: "#fff",

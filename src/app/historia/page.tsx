@@ -25,9 +25,9 @@ Sensei Manoel Laurentino, hoje, faixa preta 4º DAN, árbitro nacional (CBK_Conf
 Sensei Manoel Laurentino`;
 
   return (
-    <div style={{ maxWidth: 800, margin: "3rem auto", background: "#181818", borderRadius: 12, boxShadow: "0 4px 24px #0005", padding: 32 }}>
-      <h1 style={{ color: "#fff", marginBottom: 24, textAlign: 'center', fontWeight: 700, fontSize: 32, letterSpacing: 1 }}>História da ASKAM</h1>
-      <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', color: '#fff', fontSize: 18, lineHeight: 1.7 }}>{historia}</pre>
+    <div style={{ maxWidth: 800, margin: "3rem auto", background: "var(--background)", borderRadius: 12, boxShadow: "0 4px 24px #0005", padding: 32 }}>
+      <h1 style={{ color: "var(--foreground)", marginBottom: 24, textAlign: 'center', fontWeight: 700, fontSize: 32, letterSpacing: 1 }}>História da ASKAM</h1>
+      <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', color: 'var(--foreground)', fontSize: 18, lineHeight: 1.7 }}>{historia}</pre>
     </div>
   );
 }

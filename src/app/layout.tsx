@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="dojo-header">
           <span className="dojo-logo" style={{display: 'flex', alignItems: 'center', gap: 12}}>
-            <Image src="/logo.png" alt="Logo Askam" width={48} height={48} style={{borderRadius: 8, background: '#fff'}} />
+            <Image src="/askam_logo_transparent.png" alt="Logo Askam" width={48} height={48} style={{borderRadius: 8, background: 'transparent'}} />
             Askam
           </span>
           <nav className="dojo-nav">

@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <div>
       <section style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
-        <h1 className="dojo-title">Bem-vindo à Askam</h1>
+        <h1 className="dojo-title">ASKAM</h1>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap', margin: '1.5rem 0' }}>
-          <Image src="/logo.png" alt="Logo Askam" width={100} height={100} style={{ borderRadius: 12, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
-          <Image src="/federacao_karate.png" alt="Federação de Karatê" width={100} height={100} style={{ borderRadius: 12, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/askam_logo_transparent.png" alt="Logo Askam" width={100} height={100} style={{ borderRadius: 12, background: 'transparent', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/fpak_logo_transparent.png" alt="Federação de Karatê" width={100} height={100} style={{ borderRadius: 12, background: 'transparent', boxShadow: '0 2px 8px #0001' }} />
         </div>
         <p style={{ fontSize: '1.2rem', maxWidth: 700, margin: '0 auto' }}>
           Nosso dojo é dedicado à prática e ensino do karatê tradicional, promovendo disciplina, respeito e saúde física e mental. Venha fazer parte dessa jornada!
@@ -33,7 +33,7 @@ export default function Home() {
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ color: 'var(--primary)' }}>Localização</h2>
         <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
-          <Image src="/complexo_esportivo_santos_dummont.jpg" alt="Complexo Esportivo Santos Dumont" width={180} height={120} style={{ borderRadius: 10, objectFit: 'cover', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/santos_dummont_transparent.png" alt="Complexo Esportivo Santos Dumont" width={180} height={120} style={{ borderRadius: 10, objectFit: 'cover', boxShadow: '0 2px 8px #0001', background: 'transparent' }} />
           <div>
             <p>
               Rua dos Guerreiros, 123 - Centro, Cidade/UF<br />
