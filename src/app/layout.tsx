@@ -1,8 +1,7 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "./Header";
 import Image from "next/image";
-import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +13,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 
 export const metadata: Metadata = {
   title: "Askam",
@@ -35,19 +35,7 @@ export default function RootLayout({
           flexDirection: 'column',
         }}
       >
-        <header className="dojo-header">
-          <span className="dojo-logo" style={{display: 'flex', alignItems: 'center', gap: 12}}>
-            <Image src="/askam_logo_transparent.png" alt="Logo Askam" width={48} height={48} style={{borderRadius: 8, background: 'transparent'}} />
-            Askam
-          </span>
-          <nav className="dojo-nav">
-            <Link href="/">Início</Link>
-            <Link href="/aulas">Aulas</Link>
-            <Link href="/historia">História</Link>
-            <Link href="/contato">Contato</Link>
-            <Link href="/admin">Administração</Link>
-          </nav>
-        </header>
+        <Header />
         <main style={{ maxWidth: 900, margin: '2rem auto', padding: '0 1rem', flex: 1 }}>{children}</main>
         <footer style={{
           marginTop: 48,
@@ -66,7 +54,7 @@ export default function RootLayout({
           <div style={{ flex: 1, minWidth: 180, textAlign: 'left' }}>
             <div style={{ fontWeight: 600, color: 'var(--foreground)', marginBottom: 6 }}>ASKAM &copy; {new Date().getFullYear()}</div>
             <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 10 }}>
-              "Disciplina, respeito e formação de cidadãos através do Karatê."
+              &quot;Disciplina, respeito e formação de cidadãos através do Karatê.&quot;
             </div>
           </div>
           <nav style={{ flex: 1, minWidth: 180, textAlign: 'center', marginBottom: 10 }}>
@@ -94,7 +82,7 @@ export default function RootLayout({
             <div style={{ marginBottom: 6 }}>Rua dos Guerreiros, 123 - Centro, Cidade/UF</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'flex-end' }}>
               <span style={{ fontSize: 14, color: 'var(--muted)' }}>Filiada a</span>
-              <img src="/fpak_logo_transparent.png" alt="FPAK" width={40} height={40} style={{ background: 'transparent', borderRadius: 6, objectFit: 'contain', boxShadow: '0 1px 4px #0001' }} />
+              <Image src="/fpak_logo_transparent.png" alt="FPAK" width={40} height={40} style={{ background: 'transparent', borderRadius: 6, objectFit: 'contain', boxShadow: '0 1px 4px #0001' }} />
             </div>
           </div>
         </footer>
